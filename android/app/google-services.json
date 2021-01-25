@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "519163633826",
+    "project_id": "dokandar1111",
+    "storage_bucket": "dokandar1111.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:519163633826:android:924594357724772c9f37fb",
+        "android_client_info": {
+          "package_name": "com.example.dokandar_app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "519163633826-8lbqbvc5kng5j8oadbsprfb7ubn3tseu.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAMid8qJm9jdFB2EAItoNB-h5q0HYodTeQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "519163633826-8lbqbvc5kng5j8oadbsprfb7ubn3tseu.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

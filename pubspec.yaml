@@ -27,6 +27,8 @@ dependencies:
   flutter_svg: ^0.17.4
   page_transition: "^1.1.7+6"
   smooth_star_rating: '1.0.2'
+  firebase_auth: ^0.18.3
+  firebase_core: ^0.5.2
 
 dev_dependencies:
   flutter_test:

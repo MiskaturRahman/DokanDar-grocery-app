@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 
 class NumericPad extends StatelessWidget {
-
   final Function(int) onNumberSelected;
 
   NumericPad({@required this.onNumberSelected});
@@ -14,7 +13,6 @@ class NumericPad extends StatelessWidget {
         crossAxisAlignment: CrossAxisAlignment.stretch,
         mainAxisAlignment: MainAxisAlignment.spaceEvenly,
         children: <Widget>[
-
           Container(
             height: MediaQuery.of(context).size.height * 0.11,
             child: Row(
@@ -27,7 +25,6 @@ class NumericPad extends StatelessWidget {
               ],
             ),
           ),
-
           Container(
             height: MediaQuery.of(context).size.height * 0.11,
             child: Row(
@@ -40,7 +37,6 @@ class NumericPad extends StatelessWidget {
               ],
             ),
           ),
-
           Container(
             height: MediaQuery.of(context).size.height * 0.11,
             child: Row(
@@ -53,7 +49,6 @@ class NumericPad extends StatelessWidget {
               ],
             ),
           ),
-
           Container(
             height: MediaQuery.of(context).size.height * 0.11,
             child: Row(
@@ -66,7 +61,6 @@ class NumericPad extends StatelessWidget {
               ],
             ),
           ),
-
         ],
       ),
     );
@@ -136,5 +130,4 @@ class NumericPad extends StatelessWidget {
       child: Container(),
     );
   }
-
 }

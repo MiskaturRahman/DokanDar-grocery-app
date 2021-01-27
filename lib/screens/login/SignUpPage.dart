@@ -1,6 +1,6 @@
-import 'package:dokandar_app/shared/colors.dart';
-import 'package:dokandar_app/shared/inputFields.dart';
-import 'package:dokandar_app/shared/styles.dart';
+import 'package:dokandar_app/shared/color.dart';
+import 'package:dokandar_app/shared/inputField.dart';
+import 'package:dokandar_app/shared/style.dart';
 import 'package:flutter/material.dart';
 import 'package:page_transition/page_transition.dart';
 import './SignInPage.dart';

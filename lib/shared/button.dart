@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
-import './colors.dart';
+import './color.dart';
 
-FlatButton froyoFlatBtn(String text, onPressed) {
+FlatButton dokanFlatBtn(String text, onPressed) {
   return FlatButton(
     onPressed: onPressed,
     child: Text(text),
     textColor: white,
-    color: primaryColor,
+    color: kPrimaryColor,
     shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(4)),
   );
 }

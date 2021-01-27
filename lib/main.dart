@@ -1,5 +1,5 @@
 import 'package:dokandar_app/screens/welcome/welcome_screen.dart';
-import 'package:dokandar_app/shared/colors.dart';
+import 'package:dokandar_app/shared/color.dart';
 
 import 'package:flutter/material.dart';
 

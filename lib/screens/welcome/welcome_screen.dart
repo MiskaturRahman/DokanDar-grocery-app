@@ -1,5 +1,5 @@
 import 'package:dokandar_app/screens/login/SignInPage.dart';
-import 'package:dokandar_app/shared/buttons.dart';
+import 'package:dokandar_app/shared/button.dart';
 import 'package:flutter/material.dart';
 import 'package:page_transition/page_transition.dart';
 

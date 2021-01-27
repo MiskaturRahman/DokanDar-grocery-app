@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import './colors.dart';
-import './styles.dart';
+import './color.dart';
+import './style.dart';
 
-Container fryoTextInput(String hintText,
+Container dokanTextInput(String hintText,
     {onTap, onChanged, onEditingComplete, onSubmitted}) {
   return Container(
     margin: EdgeInsets.only(top: 13),
@@ -23,7 +23,7 @@ Container fryoTextInput(String hintText,
   );
 }
 
-Container fryoEmailInput(String hintText,
+Container dokanEmailInput(String hintText,
     {onTap, onChanged, onEditingComplete, onSubmitted}) {
   return Container(
     margin: EdgeInsets.only(top: 13),
@@ -45,8 +45,7 @@ Container fryoEmailInput(String hintText,
   );
 }
 
-
-Container fryoPasswordInput(String hintText,
+Container dokanPasswordInput(String hintText,
     {onTap, onChanged, onEditingComplete, onSubmitted}) {
   return Container(
     margin: EdgeInsets.only(top: 13),

@@ -1,5 +1,6 @@
 import 'package:dokandar_app/screens/login/SignInPage.dart';
 import 'package:dokandar_app/shared/button.dart';
+import 'package:dokandar_app/shared/color.dart';
 import 'package:flutter/material.dart';
 import 'package:page_transition/page_transition.dart';
 
@@ -31,15 +32,29 @@ class WelcomeScreen extends StatelessWidget {
             child: Container(
               width: 100,
               margin: EdgeInsets.only(bottom: 30, right: 10),
-              child: dokanFlatBtn('Welcome', () {
-                Navigator.push(
-                    context,
-                    PageTransition(
-                        type: PageTransitionType.leftToRight,
-                        child: SignInPage()));
-              }),
+              child: FlatButton(
+                onPressed: () {
+                  Navigator.pushReplacement(
+                      context,
+                      PageTransition(
+                          type: PageTransitionType.rightToLeft,
+                          child: SignInPage()));
+                },
+                color: primaryColor,
+                padding: EdgeInsets.all(13),
+                shape: CircleBorder(),
+                child: Icon(Icons.arrow_forward, color: white),
+              ),
             ))
       ],
     ));
   }
 }
+// dokanFlatBtn('Welcome', () {
+//                 Navigator.push(
+//                     context,
+//                     PageTransition(
+//                         type: PageTransitionType.leftToRight,
+//                         child: SignInPage()));
+//               }
+//               ),

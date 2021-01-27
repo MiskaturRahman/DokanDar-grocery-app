@@ -1,5 +1,8 @@
+import 'package:dokandar_app/screens/Dashboard.dart';
 import 'package:dokandar_app/screens/login/phoneAuth/numeric_pad.dart';
+import 'package:dokandar_app/shared/color.dart';
 import 'package:flutter/material.dart';
+import 'package:page_transition/page_transition.dart';
 
 class VerifyPhone extends StatefulWidget {
   final String phoneNumber;
@@ -133,7 +136,17 @@ class _VerifyPhoneState extends State<VerifyPhone> {
                             Radius.circular(15),
                           ),
                         ),
-                        child: Center(
+                        child: FlatButton(
+                          onPressed: () {
+                            Navigator.pushReplacement(
+                                context,
+                                PageTransition(
+                                    type: PageTransitionType.rightToLeft,
+                                    child: Dashboard()));
+                          },
+                          // color: primaryColor,
+                          // padding: EdgeInsets.all(13),
+                          // shape: CircleBorder(),
                           child: Text(
                             "Verify and Create Account",
                             style: TextStyle(

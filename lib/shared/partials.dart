@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import '../shared/Product.dart';
 import '../shared/color.dart';
-import '../shared/style.dart';
+import '../shared/styles.dart';
 
 Widget foodItem(Product food,
     {double imgWidth, onLike, onTapped, bool isProductPage = false}) {
@@ -15,6 +15,7 @@ Widget foodItem(Product food,
         Container(
             width: 180,
             height: 180,
+            // ignore: deprecated_member_use
             child: RaisedButton(
                 color: white,
                 elevation: (isProductPage) ? 20 : 12,
@@ -29,6 +30,7 @@ Widget foodItem(Product food,
         Positioned(
           bottom: (isProductPage) ? 10 : 70,
           right: 0,
+          // ignore: deprecated_member_use
           child: FlatButton(
             padding: EdgeInsets.all(20),
             shape: CircleBorder(),

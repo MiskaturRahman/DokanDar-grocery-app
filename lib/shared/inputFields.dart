@@ -2,7 +2,8 @@ import 'package:flutter/material.dart';
 import './colors.dart';
 import './styles.dart';
 
-Container fryoTextInput(String hintText,
+// ignore: non_constant_identifier_names
+Container DokanDarTextInput(String hintText,
     {onTap, onChanged, onEditingComplete, onSubmitted}) {
   return Container(
     margin: EdgeInsets.only(top: 13),
@@ -23,7 +24,8 @@ Container fryoTextInput(String hintText,
   );
 }
 
-Container fryoEmailInput(String hintText,
+// ignore: non_constant_identifier_names
+Container DokanDarEmailInput(String hintText,
     {onTap, onChanged, onEditingComplete, onSubmitted}) {
   return Container(
     margin: EdgeInsets.only(top: 13),
@@ -45,8 +47,8 @@ Container fryoEmailInput(String hintText,
   );
 }
 
-
-Container fryoPasswordInput(String hintText,
+// ignore: non_constant_identifier_names
+Container DokanDarPasswordInput(String hintText,
     {onTap, onChanged, onEditingComplete, onSubmitted}) {
   return Container(
     margin: EdgeInsets.only(top: 13),

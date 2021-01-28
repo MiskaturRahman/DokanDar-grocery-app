@@ -1,6 +1,6 @@
 import 'package:dokandar_app/shared/color.dart';
 import 'package:dokandar_app/shared/inputField.dart';
-import 'package:dokandar_app/shared/style.dart';
+import 'package:dokandar_app/shared/styles.dart';
 import 'package:flutter/material.dart';
 import 'package:page_transition/page_transition.dart';
 import './SignInPage.dart';
@@ -25,6 +25,7 @@ class _SignUpPageState extends State<SignUpPage> {
               style: TextStyle(
                   color: Colors.grey, fontFamily: 'Poppins', fontSize: 15)),
           actions: <Widget>[
+            // ignore: deprecated_member_use
             FlatButton(
               onPressed: () {
                 // Navigator.of(context).pushReplacementNamed('/signin');
@@ -60,12 +61,13 @@ class _SignUpPageState extends State<SignUpPage> {
                   Positioned(
                     bottom: 15,
                     right: -15,
+                    // ignore: deprecated_member_use
                     child: FlatButton(
                       onPressed: () {
                         Navigator.pushReplacement(
                             context,
                             PageTransition(
-                              type: PageTransitionType.rightToLeft,
+                              type: PageTransitionType.rightToLeft, child: null,
                               // child: Dashboard()
                             ));
                       },

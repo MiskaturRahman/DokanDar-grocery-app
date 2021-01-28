@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import './color.dart';
-import './style.dart';
+import './styles.dart';
 
 Container dokanTextInput(String hintText,
     {onTap, onChanged, onEditingComplete, onSubmitted}) {

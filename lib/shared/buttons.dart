@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
 import './colors.dart';
 
+// ignore: deprecated_member_use
 FlatButton froyoFlatBtn(String text, onPressed) {
+  // ignore: deprecated_member_use
   return FlatButton(
     onPressed: onPressed,
     child: Text(text),
@@ -11,7 +13,9 @@ FlatButton froyoFlatBtn(String text, onPressed) {
   );
 }
 
+// ignore: deprecated_member_use
 OutlineButton froyoOutlineBtn(String text, onPressed) {
+  // ignore: deprecated_member_use
   return OutlineButton(
     onPressed: onPressed,
     child: Text(text),

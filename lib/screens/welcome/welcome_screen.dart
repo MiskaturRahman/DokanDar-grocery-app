@@ -1,5 +1,4 @@
 import 'package:dokandar_app/screens/login/SignInPage.dart';
-import 'package:dokandar_app/shared/button.dart';
 import 'package:dokandar_app/shared/color.dart';
 import 'package:flutter/material.dart';
 import 'package:page_transition/page_transition.dart';
@@ -32,6 +31,7 @@ class WelcomeScreen extends StatelessWidget {
             child: Container(
               width: 100,
               margin: EdgeInsets.only(bottom: 30, right: 10),
+              // ignore: deprecated_member_use
               child: FlatButton(
                 onPressed: () {
                   Navigator.pushReplacement(

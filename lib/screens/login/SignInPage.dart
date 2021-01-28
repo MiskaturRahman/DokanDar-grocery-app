@@ -1,7 +1,8 @@
 import 'package:dokandar_app/screens/login/phoneAuth/numeric_pad.dart';
 import 'package:dokandar_app/screens/login/phoneAuth/verifty_phone.dart';
-
+import 'package:dokandar_app/screens/welcome/welcome_screen.dart';
 import 'package:flutter/material.dart';
+import 'package:page_transition/page_transition.dart';
 
 class SignInPage extends StatefulWidget {
   final String pageTitle;
@@ -19,10 +20,19 @@ class _SignInPageState extends State<SignInPage> {
   Widget build(BuildContext context) {
     return Scaffold(
         appBar: AppBar(
-          leading: Icon(
-            Icons.close,
-            size: 30,
-            color: Colors.black,
+          leading: GestureDetector(
+            onTap: () {
+              Navigator.pushReplacement(
+                  context,
+                  PageTransition(
+                      type: PageTransitionType.leftToRight,
+                      child: WelcomeScreen()));
+            },
+            child: Icon(
+              Icons.arrow_back,
+              size: 30,
+              color: Colors.black,
+            ),
           ),
           title: Text(
             "Continue with phone",
@@ -39,25 +49,11 @@ class _SignInPageState extends State<SignInPage> {
         ),
         body: new Stack(children: <Widget>[
           new Container(
-              // decoration: new BoxDecoration(
-              //     image: new DecorationImage(
-              //         image: new AssetImage("assets/images/authpage.png"),
-              //         fit: BoxFit.cover)),
               child: Center(
                   child: Column(
             children: <Widget>[
               Expanded(
                 child: Container(
-                  // decoration: BoxDecoration(
-                  //   gradient: LinearGradient(
-                  //     begin: Alignment.topCenter,
-                  //     end: Alignment.bottomCenter,
-                  //     List: [
-                  //       Color(0xFFFFFFFF),
-                  //       Color(0xFFF7F7F7),
-                  //     ],
-                  //   ),
-                  // ),
                   child: Column(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: <Widget>[

@@ -39,7 +39,7 @@ class _DashboardState extends State<Dashboard> {
             icon: Icon(Dokandar.funnel),
           ),
           backgroundColor: primaryColor,
-          title: Text('DokanDar',
+          title: Text('দোকানদার',
               style: logoWhiteStyle, textAlign: TextAlign.center),
           actions: <Widget>[
             IconButton(

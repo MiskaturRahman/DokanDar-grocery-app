@@ -12,8 +12,8 @@ const logoStyle = TextStyle(
     letterSpacing: 2);
 
 const logoWhiteStyle = TextStyle(
-    fontFamily: 'Pacifico',
-    fontSize: 21,
+    fontFamily: 'Ekushey Amar Bangla',
+    fontSize: 30,
     letterSpacing: 2,
     color: Colors.white);
 const whiteText = TextStyle(color: Colors.white, fontFamily: 'Poppins');
@@ -33,19 +33,18 @@ const h4 = TextStyle(
     fontSize: 18,
     fontWeight: FontWeight.w700,
     fontFamily: 'Poppins');
-    
+
 const h5 = TextStyle(
     color: Colors.black,
     fontSize: 18,
     fontWeight: FontWeight.w500,
     fontFamily: 'Poppins');
 
-    const h6 = TextStyle(
+const h6 = TextStyle(
     color: Colors.black,
     fontSize: 16,
     fontWeight: FontWeight.w500,
     fontFamily: 'Poppins');
-
 
 const priceText = TextStyle(
     color: Colors.black,
@@ -59,8 +58,7 @@ const foodNameText = TextStyle(
     fontWeight: FontWeight.w600,
     fontFamily: 'Poppins');
 
-const tabLinkStyle =
-    TextStyle(fontWeight: FontWeight.w500);
+const tabLinkStyle = TextStyle(fontWeight: FontWeight.w500);
 
 const taglineText = TextStyle(color: Colors.grey, fontFamily: 'Poppins');
 const categoryText = TextStyle(

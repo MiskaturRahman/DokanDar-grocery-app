@@ -12,7 +12,9 @@ import 'package:smooth_star_rating/smooth_star_rating.dart';
 class ProductPage extends StatefulWidget {
   static final String route = "Dashboard-route";
   Data ProductData;
-  ProductPage({this.ProductData});
+
+  var productData;
+  ProductPage({this.productData});
 
   @override
   _ProductPageState createState() => _ProductPageState();

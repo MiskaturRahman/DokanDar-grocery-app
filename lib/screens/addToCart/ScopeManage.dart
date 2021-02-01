@@ -1,12 +1,7 @@
 import 'dart:io';
-
 import 'package:scoped_model/scoped_model.dart';
 import 'package:sqflite/sqflite.dart';
-
-import 'dart:io';
-
 import 'package:path/path.dart';
-import 'package:sqflite/sqflite.dart';
 import 'package:path_provider/path_provider.dart';
 
 import 'package:localstorage/localstorage.dart';

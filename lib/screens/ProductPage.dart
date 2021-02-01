@@ -10,10 +10,9 @@ import '../shared/buttons.dart';
 import 'package:smooth_star_rating/smooth_star_rating.dart';
 
 class ProductPage extends StatefulWidget {
-  final String pageTitle;
-  final Product productData;
-
-  ProductPage({Key key, this.pageTitle, this.productData}) : super(key: key);
+  static final String route = "Dashboard-route";
+  Data ProductData;
+  ProductPage({this.ProductData});
 
   @override
   _ProductPageState createState() => _ProductPageState();
@@ -56,7 +55,7 @@ class _ProductPageState extends State<ProductPage> {
         leading: BackButton(
           color: darkText,
         ),
-        title: Text(widget.productData.name, style: h4),
+        title: Text(widget.ProductData.name, style: h4),
       ),
       body: ListView(
         children: <Widget>[
@@ -75,8 +74,8 @@ class _ProductPageState extends State<ProductPage> {
                         mainAxisAlignment: MainAxisAlignment.start,
                         crossAxisAlignment: CrossAxisAlignment.center,
                         children: <Widget>[
-                          Text(widget.productData.name, style: h5),
-                          Text(widget.productData.price, style: h3),
+                          Text(widget.ProductData.name, style: h5),
+                          Text(widget.ProductData.price.toString(), style: h3),
                           Container(
                             margin: EdgeInsets.only(top: 5, bottom: 20),
                             child: SmoothStarRating(
@@ -143,39 +142,10 @@ class _ProductPageState extends State<ProductPage> {
                               ],
                             ),
                           ),
-                          Container(
-                            width: 180,
-                            child: froyoOutlineBtn('Buy Now', () {}),
-                          ),
-                          Container(
-                            width: 180,
-                            child: froyoFlatBtn('Add to Cart', () {}),
-                          )
                         ],
                       ),
-                      decoration: BoxDecoration(
-                          color: white,
-                          borderRadius: BorderRadius.circular(10),
-                          boxShadow: [
-                            BoxShadow(
-                                blurRadius: 15,
-                                spreadRadius: 5,
-                                color: Color.fromRGBO(0, 0, 0, .05))
-                          ]),
                     ),
                   ),
-                  Align(
-                    alignment: Alignment.center,
-                    child: SizedBox(
-                      width: 200,
-                      height: 160,
-                      child: foodItem(widget.productData,
-                          isProductPage: true,
-                          onTapped: () {},
-                          imgWidth: 250,
-                          onLike: () {}),
-                    ),
-                  )
                 ],
               ),
             ),
@@ -202,7 +172,7 @@ class _ProductPageState extends State<ProductPage> {
                         style: TextStyle(fontSize: 12.0, color: Colors.grey),
                       ),
                     ),
-                    Text("\$${widget.productData.price.toString()}",
+                    Text("\$${widget.ProductData.price.toString()}",
                         style: TextStyle(
                             fontSize: 25.0, fontWeight: FontWeight.w600)),
                   ],
@@ -213,7 +183,7 @@ class _ProductPageState extends State<ProductPage> {
                   return RaisedButton(
                     color: Colors.deepOrange,
                     onPressed: () {
-                      model.addCart(detail);
+                      model.addCart(widget.ProductData);
                       Timer(Duration(milliseconds: 500), () {
                         showCartSnak(model.cartMsg, model.success);
                       });

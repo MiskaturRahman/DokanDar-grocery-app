@@ -39,7 +39,7 @@ class _DashboardState extends State<Dashboard> {
             icon: Icon(Dokandar.funnel),
           ),
           backgroundColor: primaryColor,
-          title: Text('DokanDar',
+          title: Text('দোকানদার',
               style: logoWhiteStyle, textAlign: TextAlign.center),
           actions: <Widget>[
             IconButton(
@@ -110,25 +110,25 @@ Widget storeTab(BuildContext context) {
   List<Product> foods = [
     Product(
         name: "Hamburger",
-        image: "images/3.png",
+        image: "assets/images/3.png",
         price: "\$25.00",
         userLiked: true,
         discount: 10),
     Product(
         name: "Pasta",
-        image: "images/5.png",
+        image: "assets/images/5.png",
         price: "\$150.00",
         userLiked: false,
         discount: 7.8),
     Product(
       name: "Akara",
-      image: 'images/2.png',
+      image: 'assets/images/2.png',
       price: '\$10.99',
       userLiked: false,
     ),
     Product(
         name: "Strawberry",
-        image: "images/1.png",
+        image: "assets/images/1.png",
         price: '\$50.00',
         userLiked: true,
         discount: 14)
@@ -137,24 +137,24 @@ Widget storeTab(BuildContext context) {
   List<Product> drinks = [
     Product(
         name: "Coca-Cola",
-        image: "images/6.png",
+        image: "assets/images/6.png",
         price: "\$45.12",
         userLiked: true,
         discount: 2),
     Product(
         name: "Lemonade",
-        image: "images/7.png",
+        image: "assets/images/7.png",
         price: "\$28.00",
         userLiked: false,
         discount: 5.2),
     Product(
         name: "Vodka",
-        image: "images/8.png",
+        image: "assets/images/8.png",
         price: "\$78.99",
         userLiked: false),
     Product(
         name: "Tequila",
-        image: "images/9.png",
+        image: "assets/images/9.png",
         price: "\$168.99",
         userLiked: true,
         discount: 3.4)

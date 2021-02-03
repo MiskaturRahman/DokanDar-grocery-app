@@ -1,3 +1,4 @@
+import 'package:dokandar_app/screens/cart.dart';
 import 'package:flutter/material.dart';
 import '../shared/styles.dart';
 import '../shared/colors.dart';
@@ -22,7 +23,7 @@ class _DashboardState extends State<Dashboard> {
   Widget build(BuildContext context) {
     final _tabs = [
       storeTab(context),
-      Text('Tab2'),
+      MyCart(),
       Text('Tab3'),
       Text('Tab4'),
       Text('Tab5'),

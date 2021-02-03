@@ -121,9 +121,8 @@ class _ProductPageState extends State<ProductPage> {
                               child: froyoOutlineBtn('Buy Now', () {}),
                             ),
                             Container(
-                              width: 180,
-                              child: froyoFlatBtn('Add to Cart', () {}),
-                            )
+                                width: 180,
+                                child: froyoFlatBtn('Add to Cart', () {}))
                           ],
                         ),
                         decoration: BoxDecoration(

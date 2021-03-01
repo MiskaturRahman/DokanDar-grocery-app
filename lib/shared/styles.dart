@@ -16,6 +16,10 @@ const logoWhiteStyle = TextStyle(
     fontSize: 30,
     letterSpacing: 2,
     color: Colors.white);
+
+const headerStyle = TextStyle(
+    fontFamily: 'Ekushey Amar Bangla', fontSize: 20, color: Colors.white);
+
 const whiteText = TextStyle(color: Colors.white, fontFamily: 'Poppins');
 const disabledText = TextStyle(color: Colors.grey, fontFamily: 'Poppins');
 const contrastText = TextStyle(color: primaryColor, fontFamily: 'Poppins');

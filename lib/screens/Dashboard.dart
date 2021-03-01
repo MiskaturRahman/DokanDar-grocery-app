@@ -110,60 +110,86 @@ Widget storeTab(BuildContext context) {
   // am to start another template
   List<Product> foods = [
     Product(
-        name: "Hamburger",
-        image: "assets/images/3.png",
-        price: "\$25.00",
+        name: "PADMA 12KG 22MM",
+        image: "assets/images/padma.jfif",
+        price: ("\750 TAKA"),
         userLiked: true,
         discount: 10),
     Product(
-        name: "Pasta",
-        image: "assets/images/5.png",
-        price: "\$150.00",
+        name: "PETROMAX 12KG 22MM",
+        image: "assets/images/petromax.png",
+        price: "\780 TAKA",
         userLiked: false,
         discount: 7.8),
     Product(
-      name: "Akara",
-      image: 'assets/images/2.png',
-      price: '\$10.99',
+      name: "OMERA",
+      image: 'assets/images/omera.jpg',
+      price: '\850 TAKA',
       userLiked: false,
     ),
     Product(
-        name: "Strawberry",
-        image: "assets/images/1.png",
-        price: '\$50.00',
+        name: "BEXIMCO",
+        image: "assets/images/beximco.jpg",
+        price: '\870 TAKA',
+        userLiked: true,
+        discount: 14)
+  ];
+  List<Product> big = [
+    Product(
+        name: "PETROMAX 35KG 22MM",
+        image: "assets/images/petromax.png",
+        price: ("\2300 TAKA"),
+        userLiked: true,
+        discount: 10),
+    Product(
+        name: "UNIGAS 35KG 22MM",
+        image: "assets/images/unigas.jfif",
+        price: "\2300 TAKA",
+        userLiked: false,
+        discount: 7.8),
+    Product(
+      name: "BM GAS",
+      image: 'assets/images/bm.png',
+      price: '\2200 TAKA',
+      userLiked: false,
+    ),
+    Product(
+        name: "BASHUNDHARA 30KG",
+        image: "assets/images/bashundhara.png",
+        price: '\1900 TAKA',
         userLiked: true,
         discount: 14)
   ];
 
   List<Product> drinks = [
     Product(
-        name: "Coca-Cola",
-        image: "assets/images/6.png",
-        price: "\$45.12",
+        name: "TotalGaz",
+        image: "assets/images/totalgaz.png",
+        price: "\880 TAKA",
         userLiked: true,
         discount: 2),
     Product(
-        name: "Lemonade",
-        image: "assets/images/7.png",
-        price: "\$28.00",
+        name: "UniGas",
+        image: "assets/images/unigas.jfif",
+        price: "\800 TAKA",
         userLiked: false,
         discount: 5.2),
     Product(
-        name: "Vodka",
-        image: "assets/images/8.png",
-        price: "\$78.99",
+        name: "BM LPG",
+        image: "assets/images/bm.png",
+        price: "\820 TAKA",
         userLiked: false),
     Product(
-        name: "Tequila",
-        image: "assets/images/9.png",
-        price: "\$168.99",
+        name: "Bashundhara",
+        image: "assets/images/bashundhara.png",
+        price: "\800 TAKA",
         userLiked: true,
         discount: 3.4)
   ];
 
   return ListView(children: <Widget>[
     headerTopCategories(),
-    deals('Hot Deals', onViewMore: () {}, items: <Widget>[
+    deals('12KG 22MM', onViewMore: () {}, items: <Widget>[
       foodItem(foods[0], onTapped: () {
         Navigator.push(
           context,
@@ -213,7 +239,57 @@ Widget storeTab(BuildContext context) {
         );
       }, onLike: () {}),
     ]),
-    deals('Drinks Parol', onViewMore: () {}, items: <Widget>[
+    deals('35KG 22MM', onViewMore: () {}, items: <Widget>[
+      foodItem(big[0], onTapped: () {
+        Navigator.push(
+          context,
+          MaterialPageRoute(
+            builder: (context) {
+              return new ProductPage(
+                productData: foods[0],
+              );
+            },
+          ),
+        );
+      }, onLike: () {}),
+      foodItem(big[1], onTapped: () {
+        Navigator.push(
+          context,
+          MaterialPageRoute(
+            builder: (context) {
+              return new ProductPage(
+                productData: foods[1],
+              );
+            },
+          ),
+        );
+      }, imgWidth: 250, onLike: () {}),
+      foodItem(big[2], onTapped: () {
+        Navigator.push(
+          context,
+          MaterialPageRoute(
+            builder: (context) {
+              return new ProductPage(
+                productData: foods[2],
+              );
+            },
+          ),
+        );
+      }, imgWidth: 200, onLike: () {}),
+      foodItem(big[3], onTapped: () {
+        Navigator.push(
+          context,
+          MaterialPageRoute(
+            builder: (context) {
+              return new ProductPage(
+                productData: foods[3],
+              );
+            },
+          ),
+        );
+      }, onLike: () {}),
+    ]),
+    deals('12KG 20MM', onViewMore: () {}, items: <Widget>[
       foodItem(drinks[0], onTapped: () {
         Navigator.push(
           context,
@@ -299,12 +375,11 @@ Widget headerTopCategories() {
           scrollDirection: Axis.horizontal,
           shrinkWrap: true,
           children: <Widget>[
-            headerCategoryItem('Frieds', Dokandar.dinner, onPressed: () {}),
-            headerCategoryItem('Fast Food', Dokandar.food, onPressed: () {}),
-            headerCategoryItem('Creamery', Dokandar.poop, onPressed: () {}),
-            headerCategoryItem('Hot Drinks', Dokandar.coffee_cup,
-                onPressed: () {}),
-            headerCategoryItem('Vegetables', Dokandar.leaf, onPressed: () {}),
+            headerCategoryItem('BASHUNDHARA', onPressed: () {}),
+            headerCategoryItem('OMERA', onPressed: () {}),
+            headerCategoryItem('Creamery', onPressed: () {}),
+            headerCategoryItem('Hot Drinks', onPressed: () {}),
+            headerCategoryItem('Vegetables', onPressed: () {}),
           ],
         ),
       )
@@ -312,7 +387,7 @@ Widget headerTopCategories() {
   );
 }
 
-Widget headerCategoryItem(String name, IconData icon, {onPressed}) {
+Widget headerCategoryItem(String name, {onPressed}) {
   return Container(
     margin: EdgeInsets.only(left: 15),
     child: Column(
@@ -328,7 +403,6 @@ Widget headerCategoryItem(String name, IconData icon, {onPressed}) {
               heroTag: name,
               onPressed: onPressed,
               backgroundColor: white,
-              child: Icon(icon, size: 35, color: Colors.black87),
             )),
         Text(name + ' ›', style: categoryText)
       ],
